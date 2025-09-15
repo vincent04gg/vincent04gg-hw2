@@ -1,0 +1,7 @@
+For the test suite, I tested and fixed two bugs:
+- the first one was that the original implementation used big-endian byte order for base64 conversion. For this I created a test suite that ensured the base64 conversion used little endian as required.
+- the second one was that the program didn't handle zero values correctly for base64 conversion. For this I created a test suite that verifies that zero can be encoded and produces a valid base64 string.
+
+For extra credit I created a test suite that tested things like infinity values, long texts, special characters, negative numbers, zero, decimals, malformed padding across many conversions.
+- 
+
